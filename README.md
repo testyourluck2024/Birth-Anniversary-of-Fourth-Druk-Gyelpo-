@@ -17,6 +17,13 @@
             margin: auto;
             padding: 20px;
         }
+        .top-text {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
         h1 {
             text-align: center;
             color: #4CAF50;
@@ -97,6 +104,13 @@
             opacity: 0;
             animation: fadeIn 1s forwards 3s;
         }
+        .results-time {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
 
         /* Fade-in Animation */
         @keyframes fadeIn {
@@ -109,6 +123,11 @@
 <body>
 
     <div class="container">
+        <!-- Top Text -->
+        <div class="top-text">
+            <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།<br>འབྱོན་པ་ལེགས་སོ་ཟེར་ཞུ་ནི་ཨིན་ལགས།</p>
+        </div>
+
         <h1>Lucky Draw November 2024</h1>
         <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
         
@@ -126,7 +145,7 @@
 
         <div class="form-container">
             <form action="#" method="post">
-                <label for="ticketNumber">Enter Ticket Number (A1 to A10000):</label>
+                <label for="ticketNumber">Enter Ticket Number (A1 to A5000000):</label>
                 <input type="text" id="ticketNumber" name="ticketNumber" required>
 
                 <label for="fullName">Your Full Name:</label>
@@ -145,6 +164,11 @@
         <!-- Strict Note -->
         <div class="strict-note">
             <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
+        </div>
+
+        <!-- Results Time -->
+        <div class="results-time">
+            <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024.</p>
         </div>
     </div>
 
