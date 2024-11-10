@@ -120,6 +120,25 @@
             margin-top: 10px;
         }
 
+        /* Style for the Telegram button */
+        .telegram-button {
+            display: block;
+            background-color: #0088cc;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 20px auto;
+            width: 200px;
+            cursor: pointer;
+        }
+        .telegram-button:hover {
+            background-color: #0077b3;
+        }
+
         /* Fade-in Animation */
         @keyframes fadeIn {
             to {
@@ -196,6 +215,11 @@
             </form>
         </div>
 
+        <!-- Telegram Contact Button -->
+        <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
+            Contact Support on Telegram
+        </a>
+
         <!-- Strict Note -->
         <div class="strict-note">
             <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
@@ -205,17 +229,4 @@
         <div class="results-time">
             <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024 in website</p>
             <p>
-                <a href="https://www.binance.com" target="_blank">Open Binance Website</a> | 
-                <a href="https://trustwallet.com" target="_blank">Open Trust Wallet Website</a> |
-                <a href="https://www.okx.com" target="_blank">Open OKX Website</a> | 
-                <a href="https://www.kucoin.com" target="_blank">Open KuCoin Website</a>
-            </p>
-        </div>
-    </div>
-
-    <script>
-        // Function to copy TRC20 address to clipboard
-        function copyToClipboard() {
-            var copyText = document.getElementById("trc20Address");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
+                <a href="https://www.binance.com" target="_blank
