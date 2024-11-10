@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -126,7 +126,7 @@
         <!-- Top Text -->
         <div class="top-text">
             <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།<br>
-        </div>
+      
 
         <h1>Lucky Draw November 2024</h1>
         <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
@@ -206,5 +206,3 @@
         }
     </script>
 
-</body>
-</html>
