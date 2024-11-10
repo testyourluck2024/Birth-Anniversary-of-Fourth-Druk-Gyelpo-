@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Draw November 2024</title>
+    <title>Lucky Draw Nov.11, 2024</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,7 +38,7 @@
             opacity: 0;
             animation: fadeIn 1s forwards 1s;
         }
-        .form-container input, .form-container button {
+        .form-container input, .form-container button, .form-container select {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -125,7 +125,7 @@
     <div class="container">
         <!-- Top Text -->
         <div class="top-text">
-            <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།<br>འབྱོན་པ་ལེགས་སོ་ཟེར་ཞུ་ནི་ཨིན་ལགས།</p>
+            <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།<br>
         </div>
 
         <h1>Lucky Draw November 2024</h1>
@@ -153,6 +153,29 @@
 
                 <label for="contactNumber">Your Contact Number:</label>
                 <input type="text" id="contactNumber" name="contactNumber" required>
+
+                <label for="dzongkhag">Select Dzongkhag:</label>
+                <select id="dzongkhag" name="dzongkhag" required>
+                    <option value="Paro">Paro</option>
+                    <option value="Thimphu">Thimphu</option>
+                    <option value="Haa">Haa</option>
+                    <option value="Gasa">Gasa</option>
+                    <option value="Chukha">Chukha</option>
+                    <option value="Mongar">Mongar</option>
+                    <option value="Lhuntse">Lhuntse</option>
+                    <option value="Samtse">Samtse</option>
+                    <option value="Dagana">Dagana</option>
+                    <option value="Zhemgang">Zhemgang</option>
+                    <option value="Sarpang">Sarpang</option>
+                    <option value="Trongsa">Trongsa</option>
+                    <option value="Samdrupjongkhar">Samdrupjongkhar</option>
+                    <option value="Trashigang">Trashigang</option>
+                    <option value="Trashiyangtse">Trashiyangtse</option>
+                    <option value="Tsirang">Tsirang</option>
+                    <option value="Punakha">Punakha</option>
+                    <option value="Chukha">Chukha</option>
+                    <option value="Wangduephodrang">Wangduephodrang</option>
+                </select>
 
                 <label for="paymentScreenshot">Upload Payment Screenshot:</label>
                 <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
