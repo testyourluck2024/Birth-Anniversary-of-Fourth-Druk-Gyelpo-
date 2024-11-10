@@ -151,7 +151,7 @@
 
     <!-- Announcement Banner -->
     <div class="announcement">
-        <p>Announcement: Hello, participate before time 5:00 PM on November 11, 2024. Right now, the number of participants is only 3021.</p>
+        <p>Announcement: Hello, participate before time 5:00 PM on November 11, 2024. Right now, the number of participants is only 3134.</p>
     </div>
 
     <div class="container">
@@ -228,5 +228,5 @@
         <!-- Results Time with links to wallet official websites -->
         <div class="results-time">
             <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024 in website</p>
-            <p>
-                <a href="https://www.binance.com" target="_blank
+           
+         
