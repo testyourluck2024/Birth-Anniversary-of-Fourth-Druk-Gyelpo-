@@ -193,7 +193,7 @@
         <div class="results-time">
             <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024.</p>
         </div>
-    </div>
+    
 
     <script>
         // Function to copy TRC20 address to clipboard
