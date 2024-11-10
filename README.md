@@ -151,7 +151,7 @@
 
     <!-- Announcement Banner -->
     <div class="announcement">
-        <p>Announcement: Hello, participate before time 5:00 PM on November 11, 2024. Right now, the number of participants is only 3134.</p>
+        <p>Announcement: Participated 4200 users.</p>
     </div>
 
     <div class="container">
