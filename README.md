@@ -125,7 +125,7 @@
     <div class="container">
         <!-- Top Text -->
         <div class="top-text">
-            <p>སྐུ་གཟུགས་བཟུང་ལགས།</p>
+            <p>འབྱོན་པ་ལེགས་སོ།</p>
         </div>
 
         <h1>Lucky Draw November 2024</h1>
