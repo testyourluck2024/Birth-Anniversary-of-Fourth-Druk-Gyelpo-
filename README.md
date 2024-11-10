@@ -12,6 +12,14 @@
             background-color: #f7f7f7;
             color: #333;
         }
+        .announcement {
+            background-color: #f8d7da;
+            color: red;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
         .container {
             max-width: 800px;
             margin: auto;
@@ -122,10 +130,15 @@
 </head>
 <body>
 
+    <!-- Announcement Banner -->
+    <div class="announcement">
+        <p>Announcement: Hello, participate before time 5:00 PM on November 11, 2024. Right now, the number of participants is only 3021.</p>
+    </div>
+
     <div class="container">
         <!-- Top Text -->
         <div class="top-text">
-            <p>འབྱོན་པ་ལེགས་སོ།</p>
+            <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།</p>
         </div>
 
         <h1>Lucky Draw November 2024</h1>
@@ -206,10 +219,3 @@
             var copyText = document.getElementById("trc20Address");
             copyText.select();
             copyText.setSelectionRange(0, 99999); // For mobile devices
-            document.execCommand("copy");
-            alert("Address copied: " + copyText.value);
-        }
-    </script>
-
-</body>
-</html>
