@@ -141,7 +141,7 @@
     <!-- Announcement Banner -->
     <div class="announcement">
         <p>Lucky Draw Registration Closed!</p> <!-- This text will be green -->
-        <p>Thank you to everyone who participated in the 79th Birth Anniversary Fourth Druk Gyelpo Lucky Draw. The winners will be announced at the link provided below. We hope you'll join us for the next lucky draw in the future!</p>
+        <p>Thank you to everyone who participated in the 69th Birth Anniversary Fourth Druk Gyelpo Lucky Draw. The winners will be announced at the link provided below. We hope you'll join us for the next lucky draw in the future!</p>
     </div>
 
     <!-- Main Content -->
