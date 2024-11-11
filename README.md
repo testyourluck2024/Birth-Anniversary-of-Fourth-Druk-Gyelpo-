@@ -7,14 +7,15 @@
     <style>
         /* Container with background image */
         .container {
-            background-image: url('/mnt/data/file-PIHgctBLjKyS1OL8EKe4BDFK'); /* Path to the uploaded image */
+            background-image: url('path-to-your-uploaded-image.jpg'); /* Replace with your image URL */
             background-size: cover;
             background-position: center;
             position: relative;
             padding: 20px;
+            color: black; /* Default color for text */
         }
         
-        /* Overlay to make content more readable */
+        /* Light overlay for readability */
         .container::before {
             content: '';
             position: absolute;
@@ -22,12 +23,11 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 255, 255, 0.7); /* Light overlay for readability */
+            background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
             z-index: 1;
-            opacity: 0.3; /* 30% opacity */
         }
         
-        /* Ensuring content is above the background overlay */
+        /* Ensuring content is above the background */
         .container > * {
             position: relative;
             z-index: 2;
@@ -39,9 +39,64 @@
             font-size: 1.2em;
             text-align: center;
             margin-bottom: 20px;
+            color: red; /* Set entire announcement text to red */
         }
 
-        /* Style for the Telegram button */
+        /* Style for the main topic */
+        h1, h2 {
+            color: green; /* Topic in green */
+        }
+
+        /* Subsection heading */
+        h3 {
+            color: blue; /* Subsection color */
+        }
+
+        /* Paragraph text */
+        p {
+            color: darkblue; /* Paragraph text color */
+        }
+
+        /* Make sure to highlight all announcement sentences in red */
+        .announcement p {
+            color: red; /* Announcement text in red */
+        }
+
+        /* Payment Note Box */
+        .payment-note {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid orange;
+            color: darkred;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* TRC20 Address Box with Copy Button */
+        .trc20-address p {
+            color: darkblue;
+            font-weight: bold;
+            text-align: center;
+        }
+        .trc20-address textarea {
+            font-size: 16px;
+            text-align: center;
+            color: black;
+            width: 100%;
+        }
+        .copy-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+        }
+
+        /* Telegram button */
         .telegram-button {
             display: block;
             background-color: #0088cc;
@@ -60,12 +115,24 @@
             background-color: #0077b3;
         }
 
-        /* Fade-in Animation */
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+        /* Important note */
+        .strict-note {
+            font-weight: bold;
+            color: darkred;
+            text-align: center;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-top: 20px;
         }
+
+        /* Results Time */
+        .results-time {
+            color: darkgreen;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -78,7 +145,7 @@
 
     <!-- Main Content -->
     <h1>མི་དབང་མཆོག་གི་ སྐུའི་འཁྲུངས་སྐར་ལུ་བཀྲ་ཤིས་བདེ་ལེགས།</h1>
-    <h2>HAPPY BIRTHDAY YOUR MAJESTY</h2>
+    <h2>NOVEMBER 11, 2024 HAPPY BIRTHDAY YOUR MAJESTY</h2>
     <h3>LUCKY DRAW CONDUCTED BY "Bhutan Crypto Currency Intelligence Agencies (BCCIA)"</h3>
     <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
 
@@ -90,7 +157,7 @@
     <!-- TRC20 Address Box with Copy Button -->
     <div class="trc20-address">
         <p>Send payment to the following TRC20 address:</p>
-        <textarea id="trc20Address" readonly rows="3" style="width: 100%; font-size: 16px; text-align: center;">TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</textarea>
+        <textarea id="trc20Address" readonly rows="3">TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</textarea>
         <button class="copy-button" onclick="copyToClipboard()">Copy Address</button>
     </div>
 
@@ -147,7 +214,6 @@
 
     <!-- Results Time -->
     <div class="results-time">
-        <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024 on the website.</p>
     </div>
 </div>
 
@@ -159,4 +225,4 @@
         document.execCommand("copy");
         alert("Address copied to clipboard!");
     }
-</script>
+    
