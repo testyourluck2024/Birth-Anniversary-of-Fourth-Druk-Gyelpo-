@@ -221,7 +221,7 @@
     <!-- Obfuscated URL in Code Block -->
     <p>Visit the link to check results:</p>
     <div class="code-block announcement">
-        `https://testyourluck2024.github.io/November-11-2024-lucky-Draw-results-/`
+        https://testyourluck2024.github.io/November-11-2024-lucky-Draw-results-/
     </div>
     <!-- Telegram Contact Button -->
     <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
