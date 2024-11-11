@@ -226,3 +226,67 @@
         alert("Address copied to clipboard!");
     }
     
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Lucky Draw Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .qr-code {
+            margin: 20px 0;
+        }
+        .link-button, .qr-code img {
+            border-radius: 8px;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .link-button {
+            background-color: #0088cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Access the Lucky Draw Page</h1>
+    <p>You have multiple ways to visit the page:</p>
+
+    <!-- Shortened Link -->
+    <p>
+        <a href="https://bit.ly/your-shortened-link" target="_blank" class="link-button">
+            Visit Lucky Draw Page (Shortened Link)
+        </a>
+    </p>
+
+    <!-- Landing Page Redirect Link -->
+    <p>If the above link doesn't work, you can try this one:</p>
+    <a href="https://your-landing-page.com" target="_blank" class="link-button">
+        Alternative Link
+    </a>
+
+    <!-- QR Code -->
+    <div class="qr-code">
+        <h2>Scan the QR Code</h2>
+        <p>Alternatively, scan this QR code to access the page directly:</p>
+        <img id="qrCode" src="" alt="QR Code">
+    </div>
+
+    <!-- QR Code Generator Script -->
+    <script>
+        const link = "https://your-main-link.com";
+        const qrCodeImg = document.getElementById("qrCode");
+        qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(link)}`;
+    </script>
+
+</body>
+</html>
