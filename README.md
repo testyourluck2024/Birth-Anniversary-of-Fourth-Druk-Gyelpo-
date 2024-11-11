@@ -32,13 +32,17 @@
             z-index: 2;
         }
 
-        /* Style for announcement section (Top Announcement in Red) */
+        /* Style for announcement section (Top Announcement in Green) */
         .announcement {
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 2.5em; /* Large font size */
             text-align: center;
             margin-bottom: 20px;
-            color: red; /* Set entire announcement text to red */
+        }
+
+        /* Specific color for the Lucky Draw registration closed text */
+        .announcement p:first-child {
+            color: green; /* Set the "Lucky Draw Registration Closed!" text to green */
         }
 
         /* Main topic color mix */
@@ -87,30 +91,6 @@
             text-align: center;
         }
 
-        /* TRC20 Address Box with Copy Button */
-        .trc20-address p {
-            color: darkblue;
-            font-weight: bold;
-            text-align: center;
-        }
-        .trc20-address textarea {
-            font-size: 16px;
-            text-align: center;
-            color: black;
-            width: 100%;
-        }
-        .copy-button {
-            background-color: orange;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-            display: block;
-            width: 100%;
-        }
-
         /* Telegram button */
         .telegram-button {
             display: block;
@@ -130,7 +110,7 @@
             background-color: #0077b3;
         }
 
-        /* Important note */
+        /* Strict Note */
         .strict-note {
             font-weight: bold;
             color: darkred;
@@ -160,7 +140,8 @@
 <div class="container">
     <!-- Announcement Banner -->
     <div class="announcement">
-        <p>Announcement: The lucky draw results will be announced on the website on November 11, 2024, at 5:00 PM.</p>
+        <p>Lucky Draw Registration Closed!</p> <!-- This text will be green -->
+        <p>Thank you to everyone who participated in the 79th Birth Anniversary Fourth Druk Gyelpo Lucky Draw. The winners will be announced at the link provided below. We hope you'll join us for the next lucky draw in the future!</p>
     </div>
 
     <!-- Main Content -->
@@ -170,56 +151,8 @@
     <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
 
     <!-- Payment Note Box -->
-    <div class="payment-note announcement">
+    <div class="payment-note">
         <p>Payment: $5 to win $1000! Don't miss your chance. Deadline: November 11, 2024.</p>
-    </div>
-
-    <!-- TRC20 Address Box with Copy Button -->
-    <div class="trc20-address">
-        <p>Send payment to the following TRC20 address:</p>
-        <textarea id="trc20Address" readonly rows="3">TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</textarea>
-        <button class="copy-button" onclick="copyToClipboard()">Copy Address</button>
-    </div>
-
-    <!-- Form Container -->
-    <div class="form-container">
-        <form action="#" method="post">
-            <label for="ticketNumber">Enter Ticket Number (A1 to A5000000):</label>
-            <input type="text" id="ticketNumber" name="ticketNumber" required>
-
-            <label for="dzongkhag">Select Dzongkhag:</label>
-            <select id="dzongkhag" name="dzongkhag" required>
-                <option value="Paro">Paro</option>
-                <option value="Thimphu">Thimphu</option>
-                <option value="Haa">Haa</option>
-                <option value="Gasa">Gasa</option>
-                <option value="Chukha">Chukha</option>
-                <option value="Mongar">Mongar</option>
-                <option value="Lhuntse">Lhuntse</option>
-                <option value="Samtse">Samtse</option>
-                <option value="Dagana">Dagana</option>
-                <option value="Zhemgang">Zhemgang</option>
-                <option value="Sarpang">Sarpang</option>
-                <option value="Trongsa">Trongsa</option>
-                <option value="Samdrupjongkhar">Samdrupjongkhar</option>
-                <option value="Trashigang">Trashigang</option>
-                <option value="Trashiyangtse">Trashiyangtse</option>
-                <option value="Tsirang">Tsirang</option>
-                <option value="Punakha">Punakha</option>
-                <option value="Wangduephodrang">Wangduephodrang</option>
-            </select>
-
-            <label for="fullName">Your Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-
-            <label for="contactNumber">Your Contact Number:</label>
-            <input type="text" id="contactNumber" name="contactNumber" required>
-
-            <label for="paymentScreenshot">Upload Payment Screenshot:</label>
-            <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
-
-            <button type="submit">Submit</button>
-        </form>
     </div>
 
     <!-- Clickable Link for Results -->
@@ -234,9 +167,10 @@
     </a>
 
     <!-- Strict Note -->
-    <div class="strict-note announcement">
+    <div class="strict-note">
         <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
-   
+    </div>
 
     <!-- Results Time -->
- 
+    <div class="results-time">
+      
