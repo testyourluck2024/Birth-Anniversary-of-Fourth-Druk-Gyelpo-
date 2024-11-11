@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@
             z-index: 2;
         }
 
-        /* Style for announcement section */
+        /* Style for announcement section (Top Announcement in Red) */
         .announcement {
             font-weight: bold;
             font-size: 1.2em;
@@ -42,9 +42,18 @@
             color: red; /* Set entire announcement text to red */
         }
 
-        /* Style for the main topic */
-        h1, h2 {
-            color: green; /* Topic in green */
+        /* Main topic color mix */
+        h1 {
+            background: linear-gradient(to right, orange, yellow, red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Secondary topic color mix */
+        h2 {
+            background: linear-gradient(to right, blue, purple, green);
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         /* Subsection heading */
@@ -57,9 +66,16 @@
             color: darkblue; /* Paragraph text color */
         }
 
-        /* Make sure to highlight all announcement sentences in red */
-        .announcement p {
-            color: red; /* Announcement text in red */
+        /* Code block style for URL obfuscation */
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 1em;
+            color: #333;
+            display: inline-block;
+            word-break: break-all;
         }
 
         /* Payment Note Box */
@@ -150,8 +166,8 @@
     <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
 
     <!-- Payment Note Box -->
-    <div class="payment-note">
-        <p><strong>Payment: $5</strong> to win $1000! Don't miss your chance. Deadline: November 11, 2024.</p>
+    <div class="payment-note announcement">
+        <p>Payment: $5 to win $1000! Don't miss your chance. Deadline: November 11, 2024.</p>
     </div>
 
     <!-- TRC20 Address Box with Copy Button -->
@@ -202,13 +218,18 @@
         </form>
     </div>
 
+    <!-- Obfuscated URL in Code Block -->
+    <p>Visit the link to check results:</p>
+    <div class="code-block announcement">
+        `https://testyourluck2024.github.io/November-11-2024-lucky-Draw-results-/`
+    </div>
     <!-- Telegram Contact Button -->
     <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
         Contact Support on Telegram
     </a>
 
     <!-- Strict Note -->
-    <div class="strict-note">
+    <div class="strict-note announcement">
         <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
     </div>
 
@@ -218,75 +239,4 @@
 </div>
 
 <script>
-    function copyToClipboard() {
-        var copyText = document.getElementById("trc20Address");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-        document.execCommand("copy");
-        alert("Address copied to clipboard!");
-    }
-    
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Access Lucky Draw Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-        }
-        .qr-code {
-            margin: 20px 0;
-        }
-        .link-button, .qr-code img {
-            border-radius: 8px;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .link-button {
-            background-color: #0088cc;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Access the Lucky Draw Page</h1>
-    <p>You have multiple ways to visit the page:</p>
-
-    <!-- Shortened Link -->
-    <p>
-        <a href="https://bit.ly/your-shortened-link" target="_blank" class="link-button">
-            Visit Lucky Draw Page (Shortened Link)
-        </a>
-    </p>
-
-    <!-- Landing Page Redirect Link -->
-    <p>If the above link doesn't work, you can try this one:</p>
-    <a href="https://your-landing-page.com" target="_blank" class="link-button">
-        Alternative Link
-    </a>
-
-    <!-- QR Code -->
-    <div class="qr-code">
-        <h2>Scan the QR Code</h2>
-        <p>Alternatively, scan this QR code to access the page directly:</p>
-        <img id="qrCode" src="" alt="QR Code">
-    </div>
-
-    <!-- QR Code Generator Script -->
-    <script>
-        const link = "https://your-main-link.com";
-        const qrCodeImg = document.getElementById("qrCode");
-        qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(link)}`;
-    </script>
-
-</body>
-</html>
+    function
