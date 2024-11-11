@@ -236,7 +236,7 @@
     <!-- Strict Note -->
     <div class="strict-note announcement">
         <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
-    </div>
+   
 
     <!-- Results Time -->
     <div class
