@@ -1,122 +1,44 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Draw Nov.11, 2024</title>
+    <title>Lucky Draw Announcement</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        .announcement {
-            background-color: #f8d7da;
-            color: red;
-            padding: 15px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-        }
+        /* Container with background image */
         .container {
-            max-width: 800px;
-            margin: auto;
+            background-image: url('/mnt/data/file-PIHgctBLjKyS1OL8EKe4BDFK'); /* Path to the uploaded image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
             padding: 20px;
         }
-        .top-text {
+        
+        /* Overlay to make content more readable */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* Light overlay for readability */
+            z-index: 1;
+            opacity: 0.3; /* 30% opacity */
+        }
+        
+        /* Ensuring content is above the background overlay */
+        .container > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Style for announcement section */
+        .announcement {
+            font-weight: bold;
+            font-size: 1.2em;
             text-align: center;
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-            opacity: 0;
-            animation: fadeIn 1s forwards 0.5s;
-        }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            animation: fadeIn 1s forwards 1s;
-        }
-        .form-container input, .form-container button, .form-container select {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        .payment-note {
-            background-color: #f0f8ff;
-            border: 1px solid #4CAF50;
-            padding: 15px;
             margin-bottom: 20px;
-            text-align: center;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #4CAF50;
-            opacity: 0;
-            animation: fadeIn 1s forwards 1.5s;
-        }
-        .trc20-address {
-            background-color: #e9f7ff;
-            border: 1px solid #4CAF50;
-            padding: 10px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: fadeIn 1s forwards 2s;
-        }
-        .copy-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 4px;
-            margin-top: 10px;
-            opacity: 0;
-            animation: fadeIn 1s forwards 2.5s;
-        }
-        .strict-note {
-            background-color: #ffcccc;
-            border: 1px solid #d9534f;
-            padding: 15px;
-            margin-top: 20px;
-            text-align: center;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #d9534f;
-            opacity: 0;
-            animation: fadeIn 1s forwards 3s;
-        }
-        .results-time {
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            margin-top: 10px;
         }
 
         /* Style for the Telegram button */
@@ -148,84 +70,93 @@
 </head>
 <body>
 
+<div class="container">
     <!-- Announcement Banner -->
     <div class="announcement">
-        <p>Announcement: Participated 4200 users.</p>
+        <p>Announcement: The lucky draw results will be announced on the website on November 11, 2024, at 5:00 PM.</p>
     </div>
 
-    <div class="container">
-        <!-- Top Text -->
-        <div class="top-text">
-            <p>སྐུ་གཟུགས་བཟང་པོ་ལགས།</p>
-        </div>
+    <!-- Main Content -->
+    <h1>མི་དབང་མཆོག་གི་ སྐུའི་འཁྲུངས་སྐར་ལུ་བཀྲ་ཤིས་བདེ་ལེགས།</h1>
+    <h2>HAPPY BIRTHDAY YOUR MAJESTY</h2>
+    <h3>LUCKY DRAW CONDUCTED BY "Bhutan Crypto Currency Intelligence Agencies (BCCIA)"</h3>
+    <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
 
-        <h1>Lucky Draw November 2024</h1>
-        <p>Enter your details for a chance to win $1000 on the Birth Anniversary of the Fourth Druk Gyelpo! The Lucky Draw will be open from November 8, 2024 to November 11, 2024, so make sure to participate before it's too late!</p>
-        
-        <!-- Payment Note Box -->
-        <div class="payment-note">
-            <p><strong>Payment: $5</strong> to win $1000! Don't miss your chance. Deadline: November 11, 2024.</p>
-        </div>
+    <!-- Payment Note Box -->
+    <div class="payment-note">
+        <p><strong>Payment: $5</strong> to win $1000! Don't miss your chance. Deadline: November 11, 2024.</p>
+    </div>
 
-        <!-- TRC20 Address Box with Copy Button -->
-        <div class="trc20-address">
-            <p>Send payment to the following TRC20 address:</p>
-            <textarea id="trc20Address" readonly rows="3" style="width: 100%; font-size: 16px; text-align: center;">TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</textarea>
-            <button class="copy-button" onclick="copyToClipboard()">Copy Address</button>
-        </div>
+    <!-- TRC20 Address Box with Copy Button -->
+    <div class="trc20-address">
+        <p>Send payment to the following TRC20 address:</p>
+        <textarea id="trc20Address" readonly rows="3" style="width: 100%; font-size: 16px; text-align: center;">TMuWGYnqYxGSXgD9sfe3m1aUfNk2JW8Aci</textarea>
+        <button class="copy-button" onclick="copyToClipboard()">Copy Address</button>
+    </div>
 
-        <div class="form-container">
-            <form action="#" method="post">
-                <label for="ticketNumber">Enter Ticket Number (A1 to A5000000):</label>
-                <input type="text" id="ticketNumber" name="ticketNumber" required>
+    <!-- Form Container -->
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="ticketNumber">Enter Ticket Number (A1 to A5000000):</label>
+            <input type="text" id="ticketNumber" name="ticketNumber" required>
 
-                <label for="dzongkhag">Select Dzongkhag:</label>
-                <select id="dzongkhag" name="dzongkhag" required>
-                    <option value="Paro">Paro</option>
-                    <option value="Thimphu">Thimphu</option>
-                    <option value="Haa">Haa</option>
-                    <option value="Gasa">Gasa</option>
-                    <option value="Chukha">Chukha</option>
-                    <option value="Mongar">Mongar</option>
-                    <option value="Lhuntse">Lhuntse</option>
-                    <option value="Samtse">Samtse</option>
-                    <option value="Dagana">Dagana</option>
-                    <option value="Zhemgang">Zhemgang</option>
-                    <option value="Sarpang">Sarpang</option>
-                    <option value="Trongsa">Trongsa</option>
-                    <option value="Samdrupjongkhar">Samdrupjongkhar</option>
-                    <option value="Trashigang">Trashigang</option>
-                    <option value="Trashiyangtse">Trashiyangtse</option>
-                    <option value="Tsirang">Tsirang</option>
-                    <option value="Punakha">Punakha</option>
-                    <option value="Wangduephodrang">Wangduephodrang</option>
-                </select>
+            <label for="dzongkhag">Select Dzongkhag:</label>
+            <select id="dzongkhag" name="dzongkhag" required>
+                <option value="Paro">Paro</option>
+                <option value="Thimphu">Thimphu</option>
+                <option value="Haa">Haa</option>
+                <option value="Gasa">Gasa</option>
+                <option value="Chukha">Chukha</option>
+                <option value="Mongar">Mongar</option>
+                <option value="Lhuntse">Lhuntse</option>
+                <option value="Samtse">Samtse</option>
+                <option value="Dagana">Dagana</option>
+                <option value="Zhemgang">Zhemgang</option>
+                <option value="Sarpang">Sarpang</option>
+                <option value="Trongsa">Trongsa</option>
+                <option value="Samdrupjongkhar">Samdrupjongkhar</option>
+                <option value="Trashigang">Trashigang</option>
+                <option value="Trashiyangtse">Trashiyangtse</option>
+                <option value="Tsirang">Tsirang</option>
+                <option value="Punakha">Punakha</option>
+                <option value="Wangduephodrang">Wangduephodrang</option>
+            </select>
 
-                <label for="fullName">Your Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+            <label for="fullName">Your Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
 
-                <label for="contactNumber">Your Contact Number:</label>
-                <input type="text" id="contactNumber" name="contactNumber" required>
+            <label for="contactNumber">Your Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" required>
 
-                <label for="paymentScreenshot">Upload Payment Screenshot:</label>
-                <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
+            <label for="paymentScreenshot">Upload Payment Screenshot:</label>
+            <input type="file" id="paymentScreenshot" name="paymentScreenshot" required>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
-        <!-- Telegram Contact Button -->
-        <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
-            Contact Support on Telegram
-        </a>
+    <!-- Telegram Contact Button -->
+    <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
+        Contact Support on Telegram
+    </a>
 
-        <!-- Strict Note -->
-        <div class="strict-note">
-            <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
-        </div>
+    <!-- Strict Note -->
+    <div class="strict-note">
+        <p><strong>Important:</strong> Fake transactions or screenshots will be strictly prohibited by the system. TASHIDELAK TO EVERYONE!</p>
+    </div>
 
-        <!-- Results Time with links to wallet official websites -->
-        <div class="results-time">
-            <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024 in website</p>
-           
-         
+    <!-- Results Time -->
+    <div class="results-time">
+        <p>Lucky Draw Results will be announced at 5:00 PM on November 11, 2024 on the website.</p>
+    </div>
+</div>
+
+<script>
+    function copyToClipboard() {
+        var copyText = document.getElementById("trc20Address");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        document.execCommand("copy");
+        alert("Address copied to clipboard!");
+    }
+</script>
