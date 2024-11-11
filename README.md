@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +13,7 @@
             padding: 20px;
             color: black; /* Default color for text */
         }
-        
+
         /* Light overlay for readability */
         .container::before {
             content: '';
@@ -26,7 +25,7 @@
             background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
             z-index: 1;
         }
-        
+
         /* Ensuring content is above the background */
         .container > * {
             position: relative;
@@ -149,6 +148,11 @@
             font-weight: bold;
         }
 
+        /* Link style */
+        .blue-link {
+            color: blue;
+            text-decoration: none; /* Optional: to remove underline */
+        }
     </style>
 </head>
 <body>
@@ -218,11 +222,12 @@
         </form>
     </div>
 
-    <!-- Obfuscated URL in Code Block -->
+    <!-- Clickable Link for Results -->
     <p>Visit the link to check results:</p>
-    <div class="code-block announcement">
+    <a href="https://testyourluck2024.github.io/November-11-2024-lucky-Draw-results-/" class="blue-link" target="_blank">
         https://testyourluck2024.github.io/November-11-2024-lucky-Draw-results-/
-    </div>
+    </a>
+
     <!-- Telegram Contact Button -->
     <a href="https://t.me/bcciateam" target="_blank" class="telegram-button">
         Contact Support on Telegram
@@ -234,9 +239,4 @@
     </div>
 
     <!-- Results Time -->
-    <div class="results-time">
-    </div>
-</div>
-
-<script>
-    function
+    <div class
